@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+
+
+    .mb-80 {
+        margin-bottom: 40px;
+    }
+    .mfo_item {
+        width: calc(50% - 5px);
+        padding: 15px 10px;
+    }
+    .mfo_item__img {
+        width: 40px;
+        margin-right: 10px;
+    }
+    .mfo_item__title {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .grid_item__title,
+    .grid_item__desc {
+        font-size: 13px;
+        line-height: 14px;
+    }
+
+    .btn-desktop {
+        display: none;
+    }
+    .btn-mobile {
+        display: block;
+    }
+    .btn-default {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .calculator_left, .calculator_right {
+        width: 100%;
+    }
+    .mfo_item-card .grid_list {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
+    .payments_list {
+        flex-wrap: nowrap;
+        margin-left: -15px;
+        margin-right: -15px;
+        overflow: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .payment_item {
+        flex: 0 0 189px;
+        padding: 15px;
+    }
+    .payment_title {
+        font-size: 16px;
+    }
+
+    .conditions_item {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 15px 0;
+    }
+
+
+    .footer {
+        padding: 30px 0 45px;
+    }
+    .footer_top {
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .footer_left {
+        width: 100%;
+    }
+    .footer .logo__link {
+        width: 157px;
+        margin-bottom: 20px;
+    }
+    .footer .menu {
+        gap: 10px;
+        width: 100%;
+    }
+    .copyright_logo {
+        width: 97px;
+    }
+    .copyright_link {
+        padding-left: 15px;
+        margin-left: 15px;
+    }
+    .copyright {
+        margin-left: 0;
+    }
+    .footer_bottom__desc {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+
+
+
+
+}
