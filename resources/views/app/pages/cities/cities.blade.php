@@ -9,7 +9,12 @@
 
                         @if($loop->iteration < 13)
                             <span class="often_searched_list__item">
-                                <a href="{{route('subdomain.index', ['subdomain' => $city->slug])}}" class="often_searched_list__item_link">{{ $city->cityName }}</a>
+                                <a href="{{route('subdomain.index', ['subdomain' => $city->slug])}}"
+                                   class="often_searched_list__item_link"
+                                   title="Займы в {{ $city->cityName }}"
+                                >
+                                    {{ $city->cityName }}
+                                </a>
                             </span>
                         @endif
 
@@ -24,7 +29,12 @@
 
                                 @if($loop->iteration > 20)
                                     <span class="often_searched_list__item">
-                                        <a href="{{route('subdomain.index', ['subdomain' => $city->slug])}}" class="often_searched_list__item_link">{{ $city->cityName }}</a>
+                                        <a href="{{route('subdomain.index', ['subdomain' => $city->slug])}}"
+                                           class="often_searched_list__item_link"
+                                           title="Займы в {{ $city->cityName }}"
+                                        >
+                                            {{ $city->cityName }}
+                                        </a>
                                     </span>
                                 @endif
 

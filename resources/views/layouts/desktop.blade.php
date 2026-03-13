@@ -12,8 +12,8 @@
     @include("app.include._yandex_metrika")
 
 {{--    @yield('seo')--}}
-    <title>Займы на карту – Бюро займов</title>
-    <meta name="description" content='Список займов и компаний МФО, где можно взять займ онлайн на карту без отказа с плохой кредитной историей. Первый займ без процентов'>
+    <title>Займы в {{$city->cityName}}, {{$city->regionName}}</title>
+    <meta name="description" content='Займы на карту в {{$city->cityName}}, {{$city->regionName}}, онлайн без отказа в МФО'>
 
     <link href="{{ mix("css/desktop.css") }}" rel="stylesheet">
 
