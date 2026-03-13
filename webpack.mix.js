@@ -6,6 +6,7 @@ mix.js('resources/js/app.js', 'public/js')
 
     .copyDirectory('resources/fonts/', 'public/fonts')
     .copyDirectory('resources/images/', 'public/images')
+    .copyDirectory('resources/files/', 'public/files')
 
 if( !mix.inProduction() ) {
     mix.webpackConfig({

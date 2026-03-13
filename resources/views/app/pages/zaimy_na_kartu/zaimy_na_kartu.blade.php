@@ -1,5 +1,6 @@
 <div class="container mb-80">
     <h1 id="zaimy_na_kartu">Займы на карту</h1>
+    <p class="h1_desc">Быстрое оформление, минимальный пакет документов, решение онлайн. Первый займ без процентов! Наш генеральный партнер – bankprofi.ru предоставляет список всех <a href="https://bankprofi.ru/zaimy/zaymy-bez-procentov" target="_blank" title="Займы без процентов">займов без процентов</a></p>
 
     <div class="mfo_list row">
 

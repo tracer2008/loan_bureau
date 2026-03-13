@@ -7,13 +7,16 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
-    <link rel="canonical" href="" />
+    <link rel="canonical" href="{{url()->current()}}" />
 
     @include("app.include._yandex_metrika")
 
-    @yield('seo')
+{{--    @yield('seo')--}}
+    <title>Займы на карту – Бюро займов</title>
+    <meta name="description" content='Список займов и компаний МФО, где можно взять займ онлайн на карту без отказа с плохой кредитной историей. Первый займ без процентов'>
 
     <link href="{{ mix("css/desktop.css") }}" rel="stylesheet">
+
 
 </head>
 
@@ -34,6 +37,8 @@
     </div>
 </div>
 <script src="{{ mix('js/app.js') }}"></script>
+
+{{--@include('app.include._script_for_article')--}}
 
 @stack('scripts')
 

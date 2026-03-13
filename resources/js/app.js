@@ -50,23 +50,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     ///////////////////////////////////
-    ///////////Accordion//////////////
+    /////РАСКРЫТИЕ В БОЛЬШОМ ФУТЕРЕ////
     ///////////////////////////////////
-    var acc = document.querySelectorAll(".accordion_title");
 
-    acc.forEach(function (elem) {
-        elem.addEventListener("click", function() {
-            this.classList.toggle("active");
+    if (document.querySelector('._show_other')) {
+        var others = document.querySelectorAll('._show_other');
 
-            this.parentNode.classList.toggle('active');
+        others.forEach(function (elem) {
+            elem.addEventListener("click", function() {
 
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+                let block = elem.parentNode.querySelector('.often_searched_block__other');
+
+                if (block.style.maxHeight) {
+                    block.style.maxHeight = null;
+                } else {
+                    block.style.maxHeight = block.scrollHeight + "px";
+                }
+
+                elem.classList.toggle('active');
+
+                if (elem.querySelector('.often_searched_block__btn_text').innerText === 'Развернуть') {
+                    elem.querySelector('.often_searched_block__btn_text').innerText = 'Свернуть';
+                } else {
+                    elem.querySelector('.often_searched_block__btn_text').innerText = 'Развернуть';
+                }
+            });
         });
-    });
+    }
 
 });

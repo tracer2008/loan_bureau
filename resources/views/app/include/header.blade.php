@@ -3,7 +3,7 @@
 
         <div class="header_body row justify_align">
             <div class="header_left row">
-                <a href="{{route('index')}}" class="logo__link">
+                <a href="/" class="logo__link">
                     <img src="{{asset('images/logo.svg')}}" alt="" class="logo">
                 </a>
 

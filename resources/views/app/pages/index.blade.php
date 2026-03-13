@@ -1,8 +1,8 @@
 @extends('layouts.desktop')
 
 @section('SEO')
-    <title>Бюро займов</title>
-    <meta name="description" content='Бюро займов'>
+    <title>Займы на карту – Бюро займов</title>
+    <meta name="description" content='Список займов и компаний МФО, где можно взять займ онлайн на карту без отказа с плохой кредитной историей. Первый займ без процентов'>
 @endsection
 
 @section('content')
@@ -19,18 +19,8 @@
 
     @include("app.pages.kak_prodlit_zaim.kak_prodlit_zaim")
 
-{{--    @include("app.pages.article.article")--}}
+    @include("app.pages.article.article")
 
-
-
-
-
-
-
-
+    @include("app.pages.cities.cities")
 
 @endsection
-
-@push('scripts')
-
-@endpush

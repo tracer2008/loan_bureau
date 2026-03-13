@@ -3,8 +3,13 @@
 
     @foreach($pages as $page)
         <url>
-            <loc>{{ route($page) }}</loc>
-            <lastmod>2025-5-2T10:05:30+03:00</lastmod>
+            @if($subdomain != null)
+                <loc>{{ route($page, ['subdomain' => $subdomain]) }}</loc>
+            @else
+                <loc>{{ route($page) }}</loc>
+            @endif
+
+            <lastmod>2026-3-2T10:05:30+03:00</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1</priority>
         </url>

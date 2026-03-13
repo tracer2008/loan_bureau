@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer_top row">
             <div class="footer_left row">
-                <a href="{{route('index')}}" class="logo__link">
+                <a href="/" class="logo__link">
                     <img src="{{asset('images/logo.svg')}}" alt="" class="logo">
                 </a>
                 <ul class="menu row mb-0">
