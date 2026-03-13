@@ -19,12 +19,14 @@
                 </div>
             </div>
 
-            <div class="header_right row">
-                <span class="city_wrap p_relative row">
-                    <img src="{{asset('images/icons/map-marker.svg')}}" alt="" class="city_map_icon">
-                    <span class="city_name _city_name">Белгород</span>
-                </span>
-            </div>
+            @if($subdomain != null)
+                <div class="header_right row">
+                    <span class="city_wrap p_relative row">
+                        <img src="{{asset('images/icons/map-marker.svg')}}" alt="" class="city_map_icon">
+                        <span class="city_name _city_name">{{$city->cityName}}</span>
+                    </span>
+                </div>
+            @endif
 
             <div class="mobile_icons">
                 <span class="mobile_icon mobile_icon-burger row" onclick="support.openMenu(this)">

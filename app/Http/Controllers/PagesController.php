@@ -20,6 +20,6 @@ class PagesController extends Controller
             $article = $city->html;
         }
 
-        return view('app/pages/index', with(['article' => $article, 'cities' => $cities, 'subdomain' => $subdomain]));
+        return view('app/pages/index', with(['article' => $article, 'cities' => $cities, 'subdomain' => $subdomain, 'city' => $city]));
     }
 }
