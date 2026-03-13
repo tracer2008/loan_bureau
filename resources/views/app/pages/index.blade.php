@@ -1,9 +1,6 @@
 @extends('layouts.desktop')
 
-@section('SEO')
-    <title>Займы на карту – Бюро займов</title>
-    <meta name="description" content='Список займов и компаний МФО, где можно взять займ онлайн на карту без отказа с плохой кредитной историей. Первый займ без процентов'>
-@endsection
+
 
 @section('content')
 
